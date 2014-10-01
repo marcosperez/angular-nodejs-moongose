@@ -118,4 +118,23 @@
 		};
 	});
 
+
+	app.directive('ngAbout',function(){
+		return {
+			restrict: 'E',
+			templateUrl: '/src/views/about.html',
+			controller: ['$scope','$log','$rootScope', function($scope, $log,$rootScope ){
+				$rootScope.$on('manu_item', function(event, data){
+					if(data===2){
+						$scope.visibleAbout=true;
+						$log.log("Se selecciono Notas vale "+$scope.visibleAbout);
+					}	else	{
+						$scope.visibleAbout=false;
+						$log.log("Se selecciono Otra cosa vale "+$scope.visibleAbout);
+					}
+				});
+			}],
+			controllerAs: 'aboutCtrl'	
+		};
+	});
 })();
