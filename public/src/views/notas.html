@@ -1,0 +1,22 @@
+<div class="row" ng-show="visible">
+<center><section class="filtros">
+	<div class="input-group">
+      <input type="text" class="form-control" ng-model="busqueda" placeholder="Buscar">
+      <span class="input-group-btn">
+          <button class="btn btn-success" type="button" ng-click="notasCtrl.agregarNoticia()">Agregar</button>
+          <button class="btn btn-info" type="button" ng-click="ordenarImp()">Ordenar por Importancia</button>
+      </span>
+    </div>
+	</section></center>
+  <div ui-sortable="sortableOptions" ng-model="notas">
+    <div id={{'nota-'+$index}} class="col-md-4" ng-repeat="nota in notas | filter:busqueda" style="padding:5px; cursor:move">
+      <article class={{nota.prioridad}}>
+      <center> <button class="glyphicon glyphicon-remove" ng-click="notasCtrl.quitar(nota._id)"></button></center>
+    	     <center><h3>{{nota.titulo}}</h3></center>
+    	     <p>{{nota.descripcion}}</p>
+           <p align="right"><small ><cite >{{nota.autor}}</cite></small></p>
+        </article>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,68 @@
+
+
+.Importante{
+	padding: 2em;
+	border-radius: 2em;
+	border:1px solid #FDFD96;
+	background-color:#ef98aa;
+	width: 95%;
+}
+.Normal{
+	padding: 2em;
+	border-radius: 2em;
+	border:1px solid #FDFD96;
+	background-color:#FDFD96 ;
+	width: 95%;
+
+}
+.MuyImportante{
+	padding: 2em;
+	border-radius: 2em;
+	border:1px solid #FDFD96;
+	width: 95%;
+	background-color: #f23b1c;
+}
+
+.Poco{
+	padding: 2em;
+	border-radius: 2em;
+	border:1px solid #FDFD96;
+	width: 95%;
+	background-color: #a8e4a0;
+}
+
+.navbar{
+	background-color: #77dd77;
+	color:#000;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color: #fff;
+	background-color: #03C03C;
+}
+
+.filtros {
+	padding-bottom: 1em;
+	width: 50%;
+}
+
+.ng-invalid.ng-dirty {
+	border-color: #FA787E;
+}
+
+.ng-valid.ng-dirty {
+	border-color: #78FA89;
+}
+
+.ng-valid.ng-pristine {
+	border-color: #78FA89;
+}
+
+.ng-invalid.ng-pristine {
+	border-color: #FA787E;
+}
+
+.container-fluid{
+	width: 90%;
+}
+
